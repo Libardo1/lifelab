@@ -1,8 +1,5 @@
 from mongoengine import *
 
-connect('applab')
-
-
 class User(Document):
     id = StringField(primary_key=True)
 

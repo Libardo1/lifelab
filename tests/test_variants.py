@@ -71,5 +71,5 @@ class ExperimentTestCase(unittest.TestCase):
         self.assertEqual(updated_variant['successes'], 1)
 
     def tearDown(self):
-        db = connect('applab')
-        db.drop_database('applab')
+        db = connect('lifelab')
+        db.drop_database('lifelab')

@@ -4,12 +4,15 @@ from mongoengine import connect
 from lifelab.models import Experiment, User, Variant
 from lifelab.bandit import BayesianBandit
 import json
+import os
+
+
+MONGO_URI = os.environ.get('MONGOLAB_URI', 'mongodb://localhost:27017/lifelab')
 
 app = Flask(__name__)
 api = restful.Api(app)
 
-connect('lifelab')
-
+connect('lifelab', host=MONGO_URI)
 
 class ExperimentResource(restful.Resource):
 
