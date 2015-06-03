@@ -1,2 +1,2 @@
 # lifelab
-Life experiments made easy
+Personal life experiments made easy
