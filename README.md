@@ -1,2 +1,2 @@
-# applab
-In app experiments made easy
+# lifelab
+Life experiments made easy
