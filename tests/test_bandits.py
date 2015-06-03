@@ -1,5 +1,5 @@
 from __future__ import absolute_import
-from applab.bandit import BayesianBandit
+from lifelab.bandit import BayesianBandit
 import unittest
 import random
 from collections import Counter

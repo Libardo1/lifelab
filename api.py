@@ -1,14 +1,14 @@
 from flask import Flask, request, jsonify, make_response
 from flask.ext import restful
 from mongoengine import connect
-from applab.models import Experiment, User, Variant
-from applab.bandit import BayesianBandit
+from lifelab.models import Experiment, User, Variant
+from lifelab.bandit import BayesianBandit
 import json
 
 app = Flask(__name__)
 api = restful.Api(app)
 
-connect('applab')
+connect('lifelab')
 
 
 class ExperimentResource(restful.Resource):
